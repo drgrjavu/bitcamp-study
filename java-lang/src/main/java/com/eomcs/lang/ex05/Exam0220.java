@@ -13,6 +13,8 @@ public class Exam0220 {
     // - CPU나 OS, JVM의 문제가 아니다.
     // - IEEE 754 명세에 따라 부동소수점을 처리하는 모든 
     //   컴퓨터에서 발생하는 문제이다.
+    // - 이런 부동소수점을 계산 할때 기대하는 값과 다른 값이 나올수 있다.
+    // - 또한 연산한 결과를 메모리에 담을때도 정규화 과정에서 극한의 미세 소수점이 붙을수 있다.
     System.out.println(d1);
     System.out.println(d2);
     System.out.println(d1 + d2); 
