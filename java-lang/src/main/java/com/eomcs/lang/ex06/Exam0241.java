@@ -10,7 +10,7 @@ public class Exam0241 {
     // 상수를 사용하면 주석없이 바로 이해할 수 있다.
     // => case 문자의 값으로 변수를 사용할 수 없다.
     // => 단 값이 변경되지 않는 final 변수라면 사용할 수 있다.
-    //
+    // final의 변수는 대문자로 표기하여 인지하기 쉽게 만든다.
     final int GUEST = 0, MEMBER = 1, ADMIN = 2;
 
     switch (level) {
