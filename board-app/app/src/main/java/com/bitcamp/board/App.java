@@ -25,7 +25,7 @@ public class App {
       System.out.print("메뉴를 선택하세요[1..2](0: 종료)");
 
       int menuNo = keyboardInput.nextInt();
-      keyboardInput.nextLine();// 입력한 숫자 뒤에 남아 있는 줄바꿈 코드 제거
+      keyboardInput.nextLine();// 입력한 숫자 뒤에 남아 있는 줄바꿈 코드 제거 **1하고 엔터를 쳤을때 엔터라는 코드값이 남아있음. 이것을 제거함
 
       /*
        * if (menuNo < 1 || menuNo > 2) {
