@@ -17,6 +17,8 @@ public class BoardHandler {
   static int[] viewCount = new int[SIZE];
   static long[] createdDate = new long[SIZE];
 
+  static java.util.Scanner keyboardInput = new java.util.Scanner(System.in);
+
   static void processList() {
     // 날짜 정보에서 값을 추출하여 특정 포맷의 문자열로 만들어줄 도구를 준비
     java.text.SimpleDateFormat formatter = 
@@ -41,6 +43,7 @@ public class BoardHandler {
   static void processDetail() {
     System.out.println("[게시글 상세보기]");
 
+    
     int boardNo = Prompt.inputInt("조회할 게시글 번호? ");
 
     // 해당 번호의 게시글이 몇 번 배열에 들어 있는지 알아내기
@@ -78,7 +81,7 @@ public class BoardHandler {
     }
 
     title[boardCount] = Prompt.inputString("제목? ");
-    content[boardCount] = Prompt.inputString("내용? ");
+    content[boardCount] = Prompt.inputString("내용? "); 
     writer[boardCount] = Prompt.inputString("작성자? ");
     password[boardCount] = Prompt.inputString("암호? ");
 
