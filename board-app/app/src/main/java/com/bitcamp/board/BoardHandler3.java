@@ -92,46 +92,36 @@ public class BoardHandler {
     board.viewCount = 0;
     board.createdDate = System.currentTimeMillis();
 
-    boards[boardCount];
-    boardCount++
-    System.out.println();
-  }
+    static void processDelete() {
+      System.out.println("[게시글 삭제]");
 
-  static void processDelete() {
-    System.out.println("[게시글 삭제]");
+      int boardNo = Prompt.inputInt("삭제할 게시글 번호? ");
 
-    int boardNo = Prompt.inputInt("삭제할 게시글 번호? ");
-
-    // 해당 번호의 게시글이 몇 번 배열에 들어 있는지 알아내기
-    Board boardIndex  = -1;
-    for (int i = 0; i < boardCount; i++) {
-      if (boards[i].no == boardNo) {
-        board = boards[i];
-        break;
+      // 해당 번호의 게시글이 몇 번 배열에 들어 있는지 알아내기
+      Board boardIndex  = -1;
+      for (int i = 0; i < boardCount; i++) {
+        if (boards[i].no == boardNo) {
+          board = boards[i];
+          break;
+        }
       }
+
+      // 사용자가 입력한 번호에 해당하는 게시글을 못 찾았다면
+      if (boardIndex == -1) {
+        System.out.println("해당 번호의 게시글이 없습니다!");
+        return;
+      }
+
+      //삭제할 게시글의 다음 항목을 앞으로 당긴다.
+      for (int i = boardIndex + 1; i < boardCount; i++) {
+        boards[i - 1] = boards[i];
+      }
+
     }
 
-    // 사용자가 입력한 번호에 해당하는 게시글을 못 찾았다면
-    if (boardIndex == -1) {
-      System.out.println("해당 번호의 게시글이 없습니다!");
-      return;
-    }
+    // 새로 만든 인스턴스 주소를 래퍼런스 배열에 저장한다.
+    boards[--boardCount] = null;
 
-    //삭제할 게시글의 다음 항목을 앞으로 당긴다.
-    for (int i = boardIndex + 1; i < boardCount; i++) {
-      boards[i - 1] = boards[i];
-    }
-
+    boardCount++;
   }
-
-  public static void processUpdate() {
-
-
-  }
-
-  // 새로 만든 인스턴스 주소를 래퍼런스 배열에 저장한다.
-  boards[--boardCount] = null;
-
-  boardCount++;
-}
 }
