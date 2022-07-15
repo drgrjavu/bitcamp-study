@@ -8,7 +8,6 @@ public class App {
 
   public static void main(String[] args) {
     welcome();
-
     loop: while (true) {
       displayMenu();
       int menuNo = Prompt.inputInt("메뉴를 선택하세요[1..5](0: 종료) ");
