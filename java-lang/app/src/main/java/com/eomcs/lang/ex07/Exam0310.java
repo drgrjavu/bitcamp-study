@@ -22,6 +22,7 @@ public class Exam0310 {
     //    이 변수는 main()에 있는 변수와 다른 변수이다.
     swap(a, b);
     System.out.printf("main(): a=%d, b=%d\n", a, b);
+
   }
 }
 
