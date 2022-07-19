@@ -4,8 +4,9 @@ package com.eomcs.oop.ex02;
 //1) 성적 데이터를 저장할 사용자 정의 데이터 타입을 만든다.
 //2) 리팩토링: 메서드 추출(extract method), static nested class
 //3) 리팩토링: 메서드 추출(extract method) = 한 개의 메서드는 한 개의 기능을 수행해야 한다.
-// 
-public class Exam0130 {
+//4) GRASP(General Responsibility Assignment Software Patterns) 패턴 : Information Expert
+
+public class Exam0140 {
 
   static class Score {
     String name; 
