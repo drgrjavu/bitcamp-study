@@ -28,6 +28,6 @@ public class Calculator {
   }
 
   public int getResult() {
-    return this.result;
+    return result;
   }
 }
