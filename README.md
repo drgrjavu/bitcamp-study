@@ -103,3 +103,30 @@ export PATH=${JAVA_HOME}/bin:$PATH
 - 메서드 사용법(eomcs-java-lang: com.eomcs.lang.ex07.*)
 - 클래스 사용법(eomcs-java-lang: com.eomcs.oop.ex01.*)
 
+### 12일
+- 아침 특강(com.eomcs.quiz)
+  - ex01.Test01: 2진수에서 1 값을 가지는 비트 수를 세기
+  - ex01.Test02: 패리티 값을 알아내기 
+- 클래스 사용법(eomcs-java-lang: com.eomcs.oop.ex01.*)(계속)
+- 클래스 사용법(eomcs-java-lang: com.eomcs.oop.ex02.*)
+  - 클래스 문법 활용: 사용자 정의 데이터 타입
+  - 스태틱 메서드와 인스턴스 메서드
+  - 중첩 클래스를 패키지 멤버 클래스로 전환
+  - 패키지를 활용하여 클래스를 분류하기
+  - 생성자 
+
+### 13일
+- 아침 특강(com.eomcs.quiz)
+  - ex01.Test02/02_2/02_3: XOR 연산자의 특징
+- 클래스 사용법(eomcs-java-lang: com.eomcs.oop.ex02.*)(계속)
+  - 클래스 문법 활용: 메서드를 묶어서 분류
+  - 스태틱 필드와 인스턴스 필드의 용도
+  - 인스턴스 메서드가 필요한 이유
+- board-app 프로젝트 수행
+  - 009. 리팩토링: 함수 추출 및 함수 옮기기
+
+### 14일 
+- board-app 프로젝트 수행 
+  - 010. 스태틱 필드의 한계
+  - 011. 인스턴스 필드와 인스턴스 메서드 사용법 
+
