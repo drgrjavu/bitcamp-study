@@ -4,7 +4,7 @@
  */
 package com.bitcamp.board;
 
-public class App02 {
+public class App {
 
   public static void main(String[] args) {
     welcome();
@@ -23,13 +23,16 @@ public class App02 {
       switch (mainMenuNo) {
         case 0: break loop;
         case 1: // 게시판
-          onBoardMenu();
+          BoardHandler.execute();
           break;
         case 2: // 독서록
+          ReadingHandler.execute();
           break;
         case 3: // 방명록
+          VisitHandler.execute();
           break;
         case 4: // 공지사항
+          NoticeHandler.execute();
           break;
         default: System.out.println("메뉴 번호가 옳지 않습니다!");
       } // switch
@@ -46,41 +49,6 @@ public class App02 {
     System.out.println();
     System.out.println("환영합니다!");
     System.out.println();
-  }
-
-  static void displayLine() {
-    System.out.println("=========================================");
-  }
-
-  static void displayBlankLine() {
-    System.out.println(); // 메뉴를 처리한 후 빈 줄 출력
-  }
-
-  static void onBoardMenu() {
-    while (true) {
-      System.out.println("게시판:");
-      System.out.println("  1: 목록");
-      System.out.println("  2: 상세보기");
-      System.out.println("  3: 등록");
-      System.out.println("  4: 삭제");
-      System.out.println("  5: 변경");
-      System.out.println();
-
-      int menuNo = Prompt.inputInt("메뉴를 선택하세요[1..5](0: 이전) ");
-      displayLine();
-
-      switch (menuNo) {
-        case 0: return;
-        case 1: BoardHandler.processList(); break;
-        case 2: BoardHandler.processDetail(); break;
-        case 3: BoardHandler.processInput(); break;
-        case 4: BoardHandler.processDelete(); break;
-        case 5: BoardHandler.processUpdate(); break;
-        default: System.out.println("메뉴 번호가 옳지 않습니다!");
-      }
-
-      displayBlankLine();
-    } // 게시판 while
   }
 }
 
