@@ -1,15 +1,18 @@
 /*
  * 회원 메뉴 처리 클래스
  */
-package com.bitcamp.board;
+package com.bitcamp.board.handler;
 
 import java.util.Date;
+import com.bitcamp.board.dao.MemberList;
+import com.bitcamp.board.domain.Member;
+import com.bitcamp.util.Prompt;
 
 public class MemberHandler {
 
-  MemberList memberList = new MemberList();
+  private MemberList memberList = new MemberList();
 
-  void execute() {
+  public void execute() {
     while (true) {
       System.out.println("회원:");
       System.out.println("  1: 목록");
