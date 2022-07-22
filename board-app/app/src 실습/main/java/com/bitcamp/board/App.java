@@ -17,7 +17,7 @@ public class App {
     BoardHandler visitHandler = new BoardHandler("방명록");
     BoardHandler noticeHandler = new BoardHandler("공지사항");
     BoardHandler diaryHandler = new BoardHandler("일기장");
-    MemberHandler memberHandler = new MemberHandler();
+    MemberHandler memberHandler = new MemberHandler("회원");
 
     loop: while (true) {
 
@@ -51,7 +51,7 @@ public class App {
           break;
         case 6: // 회원
           memberHandler.execute();
-          break;
+          break;  
         default: System.out.println("메뉴 번호가 옳지 않습니다!");
       } // switch
 
