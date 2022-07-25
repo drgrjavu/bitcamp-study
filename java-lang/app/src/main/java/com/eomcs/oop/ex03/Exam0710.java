@@ -35,8 +35,6 @@ public class Exam0710 {
   public static void main(String[] args) {
     A obj1 = new A();
     System.out.printf("a=%d, b=%d, c=%d\n", obj1.a, obj1.b, obj1.c);
-    A obj2 = new A();
-    System.out.printf("a=%d, b=%d, c=%d\n", obj1.a, obj1.b, obj1.c);
   }
 }
 
