@@ -8,16 +8,16 @@ public class BoardList {
 
   private static final int DEFAULT_SIZE = 3;
 
-  int boardCount; 
-  Board[] boards; 
-  int no = 0;
+  private int boardCount; 
+  private Board[] boards; 
+  private int no = 0;
 
   // 생성자
   public BoardList() {
     this.boards = new Board[DEFAULT_SIZE];
   }
 
-  BoardList(int initCapacity) {
+  public BoardList(int initCapacity) {
     this.boards = new Board[initCapacity];
   }
 

@@ -67,7 +67,7 @@ public class MemberList {
     return true;
   }
 
-  void grow() {
+  private void grow() {
     int newSize = this.members.length + (this.members.length >> 1);
     Member[] newArray = new Member[newSize];
     for (int i = 0; i < this.members.length; i++) {
@@ -76,7 +76,7 @@ public class MemberList {
     this.members = newArray;
   }
 
-  int nextNo() {
+  private int nextNo() {
     return ++no;
   }
 }

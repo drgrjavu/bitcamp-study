@@ -56,6 +56,7 @@ public class Exam0220 {
     // 그래서 메서드가 호출될 때 마다 this 변수의 값이 바뀐다.
     obj2.m2();
 
+
   }
 }
 

@@ -39,28 +39,29 @@ public class MemberHandler {
     } // 게시판 while
   }
 
-  static void displayHeadline() {
+  private static void displayHeadline() {
     System.out.println("=========================================");
   }
 
-  static void displayBlankLine() {
+  private static void displayBlankLine() {
     System.out.println(); 
   }
 
-  void onList() {
+  private void onList() {
     System.out.println("[회원 목록]");
     System.out.println("번호 이름 이메일");
 
-    Member[] list = this.memberList.toArray();
+    Object[] list = this.memberList.toArray();
 
-    for (Member member : list) {
+    for (Object obj : list) {
+      Member member = (Member) obj;
       System.out.printf("%d\t%s\t%s\n",
           member.no, member.name, member.email);
     }
 
   }
 
-  void onDetail() {
+  private void onDetail() {
     System.out.println("[회원 상세보기]");
 
     int memberNo = Prompt.inputInt("조회할 회원 번호? ");
@@ -80,7 +81,7 @@ public class MemberHandler {
 
   }
 
-  void onInput() {
+  private void onInput() {
     System.out.println("[회원 등록]");
 
     Member member = new Member();
@@ -95,7 +96,7 @@ public class MemberHandler {
     System.out.println("회워을 등록했습니다.");
   }
 
-  void onDelete() {
+  private void onDelete() {
     System.out.println("[회원 삭제]");
 
     int memberNo = Prompt.inputInt("삭제할 회원 번호? ");
@@ -107,7 +108,7 @@ public class MemberHandler {
     }
   }
 
-  void onUpdate() {
+  private void onUpdate() {
     System.out.println("[회원 변경]");
 
     int memberNo = Prompt.inputInt("변경할 회원 번호? ");
