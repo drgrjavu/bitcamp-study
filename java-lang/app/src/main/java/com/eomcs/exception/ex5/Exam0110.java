@@ -22,6 +22,15 @@ public class Exam0110 {
       System.out.print("등록일> ");
       board.setCreatedDate(Date.valueOf(keyScan.nextLine()));
 
+      keyScan.close(); //개발자가 직접 자원을 해제시킨다.
+      //주의!
+      // => close()를 호출하기 전에 예외가 발생한다면,
+      //    Scanner 자원이 해제되지 못한다.
+      //해결책?
+      // => 정상적으로 실행되든 예외가 발생하든지 간에
+      //무조건 close()가 실행되게 만들라!
+      // =>어떻게?
+
       return board;
     } 
   }
