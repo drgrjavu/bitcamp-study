@@ -1,6 +1,6 @@
 package com.bitcamp.board;
 
-public class BoardListAppex {
+public class BoardListAppx {
   public static void main(String[] args) {
     System.out.println("[게시글 목록]");
     System.out.println("번호 제목 조회수 작성자 등록일");

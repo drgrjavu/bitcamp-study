@@ -1,6 +1,6 @@
 package com.bitcamp.board;
 
-public class BoardDetailiAppex {
+public class BoardDetailiAppx {
   public static void main(String[] args) {
     System.out.println("게시판 상세보기");
 

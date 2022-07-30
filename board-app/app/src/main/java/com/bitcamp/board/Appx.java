@@ -4,7 +4,7 @@ package com.bitcamp.board;
 //7/30까지 app005진행중. 여기서 날짜코드 확인하고 줄바꾸고 구분선 출력 확인 미흡
 // 게시판의 번호를 지정해주는 코드확인하기
 
-public class Appex {
+public class Appx {
   public static void main(String[] args) {
 
     System.out.println("게시판 애플리케이션!");
@@ -13,6 +13,8 @@ public class Appex {
     System.out.println();
 
     java.util.Scanner keyboardInput = new java.util.Scanner(System.in);
+    java.text.SimpleDateFormat formatter = 
+        new java.text.SimpleDateFormat("yyy-MM-dd");
 
 
     final int SIZE =3; //메뉴수 상수이기때문에 변수대문자를 씀
@@ -33,7 +35,6 @@ public class Appex {
       System.out.println("  1: 게시글 목록");
       System.out.println("  2: 게시글 상세보기");
       System.out.println("  3: 게시글 등록");
-
       System.out.println();
       System.out.print("메뉴를 선택하세요[1..3](0: 종료)");
 
@@ -43,27 +44,23 @@ public class Appex {
 
       if (menuNo == 0) {
         break;//0인경우 if문을 빠져나온다 안녕히가세요로~
+
       } else if (menuNo == 1) {
         System.out.println("[게시글 목록");
         System.out.println("번호 제목 조회수 작성자 등록일");
 
         for (int i = 0; i < boardCount; i++) {
-
+          java.util.Date date = new java.util.Date(createdDate[i]);
+          String dateStr = formatter.format(date);
+          System.out.printf("%d\t%s\t%d\t%s\t%s\n", 
+              no[i], title[i], viewCount[i], writer[i], dateStr);
         }
 
       } else if (menuNo == 2) {
         System.out.println("[게시판 상세보기]");
-        System.out.printf("번호: %d\n", no);
-        System.out.printf("제목: %s\n", title);
-        System.out.printf("내용: %s\n", content);
-        System.out.printf("조회수: %d\n", viewCount);
-        System.out.printf("작성자: %s\n", writer);
-        //System.out.printf("등록일: %s\n", "2022-07-30");
-        //위 날짜를 Date도구함을 통해 데이터를 준비시키자
-        //new Date(밀리초) =>지정한 밀리초를 가지고 날짜 관련 도구를 사용할 수 있도록 설정한다.
-        //Date date =>createdDate 밀리초를 가지고 설정한 날짜 정보
-        java.util.Date date = new java.util.Date(createdDate);
-        System.out.printf("등록일: %tY-%1$tm-%1$td %1$tH:%1$tM\n", date);
+        System.out.print("조회할 게시글 번호? ");
+        String input = keyboardInput.nextLine();
+
 
       } else if (menuNo == 3) {
         System.out.println("[게시글 등록]");
