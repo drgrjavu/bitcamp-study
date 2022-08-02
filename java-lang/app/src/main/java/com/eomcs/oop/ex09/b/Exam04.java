@@ -23,7 +23,7 @@ interface MyInterface4 {
   //   그 공통 코드를 다음과 같이 private 구현 메서드로 정의하면 될 것이다.
   //
   private void x() {
-    System.out.println("MyInterface4.x()");
+    System.out.println("MyInterface4.x()"); // 쓰지말라! 할거면 새로운 클래스를 만들고 거기에 지정하여 구현클래스를 만들라
   }
 }
 
