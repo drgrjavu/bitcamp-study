@@ -1,9 +1,9 @@
 package com.bitcamp.board.dao;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -22,10 +22,18 @@ public class BoardDao {
   }
 
   public void load() throws Exception {
-    try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filename))) {
+    try (DataInputStream in = new DataInputStream(new FileInputStream(filename))) {
       int size = in.readInt();
       for (int i = 0; i < size; i++) {
-        Board board = (Board) in.readObject();
+        Board board = new Board();
+        board.no = in.readInt();
+        board.title = in.readUTF();
+        board.content = in.readUTF();
+        board.writer = in.readUTF();
+        board.password = in.readUTF();
+        board.viewCount = in.readInt();
+        board.createdDate = in.readLong();
+
         list.add(board);
         boardNo = board.no;
       }
@@ -33,10 +41,16 @@ public class BoardDao {
   }
 
   public void save() throws Exception {
-    try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename))) {
+    try (DataOutputStream out = new DataOutputStream(new FileOutputStream(filename))) {
       out.writeInt(list.size());
       for (Board board : list) {
-        out.writeObject(board);
+        out.writeInt(board.no);
+        out.writeUTF(board.title);
+        out.writeUTF(board.content);
+        out.writeUTF(board.writer);
+        out.writeUTF(board.password);
+        out.writeInt(board.viewCount);
+        out.writeLong(board.createdDate);
       }
     }
   }

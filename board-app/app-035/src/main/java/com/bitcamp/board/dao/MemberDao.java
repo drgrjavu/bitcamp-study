@@ -1,9 +1,9 @@
 package com.bitcamp.board.dao;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -21,10 +21,15 @@ public class MemberDao {
   }
 
   public void load() throws Exception {
-    try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filename))) {
+    try (DataInputStream in = new DataInputStream(new FileInputStream(filename))) {
       int size = in.readInt();
       for (int i = 0; i < size; i++) {
-        Member member = (Member) in.readObject();
+        Member member = new Member();
+        member.no = in.readInt();
+        member.name = in.readUTF();
+        member.email = in.readUTF();
+        member.password = in.readUTF();
+        member.createdDate = in.readLong();
         list.add(member);
         //        System.out.println("============>");
       }
@@ -32,10 +37,14 @@ public class MemberDao {
   }
 
   public void save() throws Exception {
-    try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename))) {
+    try (DataOutputStream out = new DataOutputStream(new FileOutputStream(filename))) {
       out.writeInt(list.size());
       for (Member member : list) {
-        out.writeObject(member);
+        out.writeInt(member.no);
+        out.writeUTF(member.name);
+        out.writeUTF(member.email);
+        out.writeUTF(member.password);
+        out.writeLong(member.createdDate);
       }
     } // try () ==> try 블록을 벗어나기 전에 out.close()가 자동으로 실행된다.
   }
