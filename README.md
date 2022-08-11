@@ -244,7 +244,27 @@ export PATH=${JAVA_HOME}/bin:$PATH
   - 033. 입출력 API를 사용하여 데이터를 파일로 저장하기: 바이너리 저장(계속)
   - 034. Primitive 타입 및 String 타입 데이터를 가공하여 입출력하는 기능을 객체화하기
 - FileOutputStream/FileInputStream 사용법(board-app: com.bitcamp.study.*)
+- DataOutputStream/DataInputStream 사용법(board-app: com.bitcamp.study.*)
 
+### 28일(8/10) 
+- 아침 특강(com.eomcs.quiz)
+  - ex01.Test23: 
+  - ex01.Test24: 
+- board-app 프로젝트 수행 
+  - 035. 자바에서 제공하는 데코레이터를 사용하기
+  - 036. 인스턴스를 통째로 입출력하기: 객체 직렬화
+  - 037. 인스턴스를 텍스트 형식으로 입출력하기: FileReader/FileWriter
+  - 038. 리팩토링: Factory Method 패턴, Information Expert 패턴
+- ObjectOutputStream/ObjectInputStream 사용법
+
+### 29일(8/10) 
+- 아침 특강(com.eomcs.quiz)
+  - ex01.Test25: 
+  - ex01.Test26: 
+- board-app 프로젝트 수행 
+  - 039. JSON 형식으로 데이터 입출력하기: Gson 라이브러리 사용
+  - 040. 네트워킹을 이용한 파일 공유: client/server app. 아키텍처로 전환
+- ObjectOutputStream/ObjectInputStream 사용법
 
 ## 구글 미트
 https://meet.google.com/uou-bbtj-qzf
