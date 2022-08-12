@@ -7,8 +7,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import com.bitcamp.board.domain.Board;
-import com.google.gson.Gson;
-
+import com.google.gson.Gson; 
+//
 // 게시글 목록을 관리하는 역할
 //
 public class BoardDao {
