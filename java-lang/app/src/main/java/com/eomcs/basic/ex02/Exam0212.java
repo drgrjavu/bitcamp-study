@@ -8,11 +8,12 @@ public class Exam0212 {
     Double obj2 = Double.valueOf(3.14);
     Boolean obj3 = Boolean.valueOf(true);
 
-    int i = obj1.intValue();
-    long l = obj2.longValue();
+    long l = obj1.longValue();
+    double d = obj2.doubleValue();
     boolean bool = obj3.booleanValue();
 
     // 문자열로 꺼내기
+    // Wrapper 클래스도 String 클래스처럼 Object의 toString()을 오버라이딩 했다.
     String s1 = obj1.toString(); // Object의 toString()이 아니다. Long에서 오버라이딩한 toString()이다.
     String s2 = obj2.toString(); // Object의 toString()이 아니다. Double에서 오버라이딩한 toString()이다.
     String s3 = obj3.toString(); // Object의 toString()이 아니다. Boolean에서 오버라이딩한 toString()이다.
