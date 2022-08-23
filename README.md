@@ -265,6 +265,8 @@ export PATH=${JAVA_HOME}/bin:$PATH
   - 039. JSON 형식으로 데이터 입출력하기: Gson 라이브러리 사용
   - 040. 네트워킹을 이용한 파일 공유: client/server app. 아키텍처로 전환
 
+### 교실 이전(8/12) 
+
 ### 30일(8/16) 
 
 - board-app 프로젝트 수행 
@@ -301,6 +303,15 @@ export PATH=${JAVA_HOME}/bin:$PATH
 - Proxy 패턴의 이해와 활용법
 - Connection-Oriented 통신과 Connectionless 통신 비교
 - Stateful 통신 방식과 Stateless 통신 방식 비교
+
+### 34일(8/22) 
+
+- 아침 특강(com.eomcs.quiz)
+  - ex01.Test31:
+  - ex02.Test12: 
+- board-app 프로젝트 수행 
+  - 045. Thread를 이용한 멀티 태스킹 구현하기: 동시 요청 처리하기
+- 네트워킹 사용법(com.eomcs.net.*)
 
 
 ## 구글 미트
