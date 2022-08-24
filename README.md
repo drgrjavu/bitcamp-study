@@ -319,5 +319,15 @@ export PATH=${JAVA_HOME}/bin:$PATH
   - ex01.Test32:
 - 네트워킹 사용법(com.eomcs.net.*)(계속)
 
+### 36일(8/24) 
+
+- 아침 특강(com.eomcs.quiz)
+  - ex01.Test33, 34, 35, 36:
+- 네트워킹 사용법(com.eomcs.net.*)(계속)
+- 스레드 사용법(com.eomcs.concurrent.*)
+  - 멀티 태스킹 기법: 멀티 프로세싱, 멀티 스레딩
+  - CPU 스케줄링, 컨텍스트 스위칭 
+  
+
 ## 구글 미트
 https://meet.google.com/uou-bbtj-qzf
