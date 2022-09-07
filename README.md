@@ -387,6 +387,27 @@ export PATH=${JAVA_HOME}/bin:$PATH
   - 논리 모델링 및 물리 모델링
   - 포워드 엔지니어링을 통해 DDL 생성 및 테이블 생성
 
+### 44일(9/5) 
+
+- JDBC 프로그래밍(com.eomcs.jdbc.*)
+  - DBMS Native API 와 ODBC API 개념
+  - JDBC Driver 유형
+  - JDBC 프로그래밍 절차
+  - Driver 구현체 생성 및 DriverManager에 등록하는 방법
+  - DBMS에 연결하는 방법
+
+### 45일(9/6) 
+
+- JDBC 프로그래밍(com.eomcs.jdbc.*)
+  - insert, select, update, delete 을 다루는 법
+  - SQL 삽입 공격을 막는 방법: Statement와 PreparedStatement
+  - 트랜잭션 다루기
+  
+### 46일(9/7) 
+
+- board-app 프로젝트 수행 
+  - 046. DBMS 도입하기
+
 
 ## 구글 미트
 https://meet.google.com/uou-bbtj-qzf

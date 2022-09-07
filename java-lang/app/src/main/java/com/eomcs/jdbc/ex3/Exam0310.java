@@ -12,7 +12,6 @@ public class Exam0310 {
     String title = null;
     String contents = null;
 
-
     try (Scanner keyScan = new Scanner(System.in)) {
 
       // 사용자로부터 제목, 내용을 입력 받는다.
