@@ -423,6 +423,30 @@ export PATH=${JAVA_HOME}/bin:$PATH
 - board-app 프로젝트 수행 
   - 051. Application Server 구조로 전환하기
   
+### 49일(9/14) 
 
+- board-app 프로젝트 수행 
+  - 051. Application Server 구조로 전환하기(계속)
+
+### 50일(9/15) 
+
+- board-app 프로젝트 수행 
+  - 052. Web Application Server 구조로 전환하기 - 웹 기술 도입
+
+### 51일(9/16) 
+
+- board-app 프로젝트 수행 
+  - 052. Web Application Server 구조로 전환하기 - 웹 기술 도입(계속)
+  - 053. 명령처리 부분에 Command 패턴을 적용하기
+  - 054. Command 객체의 사용법 통일하기 - 인터페이스 활용
+  - 055. 애노테이션과 리플렉션 API를 활용하여 객체 자동 생성하기
+
+### 52일(9/19) 
+
+- board-app 프로젝트 수행 
+  - 055. 애노테이션과 리플렉션 API를 활용하여 객체 자동 생성하기(계속)
+  - 056. 웹서버와 애플리케이션 서버 기능 분리하기
+  - 057. 웹 애플리케이션 서버를 자바 표준 웹 기술로 대체하기: Servlet/JSP
+  
 ## 구글 미트
 https://meet.google.com/uou-bbtj-qzf
