@@ -497,6 +497,34 @@ export PATH=${JAVA_HOME}/bin:$PATH
     - 액터 식별 방법 및 액터의 관계
     - 유스케이션 식별 방법 및 유스케이스 관계
     
+### 57일(9/26) 
+
+- 서블릿 프로그래밍
+  - EL(Expression Language) 사용법
+- board-app 프로젝트 수행 
+  - 061. JSP를 이용하여 출력문을 자동으로 생성하기: MVC 모델1(계속)
+  - 062. JSP에 있는 자바 코드를 Servlet으로 분리하기: MVC 모델2
+  - 063. OGNL 표기법으로 객체 프로퍼티를 좀 더 쉽게 다루기: EL 문법 사용
+
+### 58일(9/27) 
+
+- 서블릿 프로그래밍
+  - JSTL(JSP Standard Tag Library) 사용법
+  - 세션의 구동 원리와 다루는 방법
+- board-app 프로젝트 수행 
+  - 063. OGNL 표기법으로 객체 프로퍼티를 좀 더 쉽게 다루기: EL 문법 사용(계속)
+  - 064. JSP에서 자바 코드를 제거하기: JSTL 사용
+  - 065. 로그인, 로그아웃 처리하기: HttpSession, Cookie 사용
+
+### 59일(9/28) 
+
+- 서블릿 프로그래밍
+  - 쿠키의 구동 원리와 다루는 방법
+- board-app 프로젝트 수행 
+  - 065. 로그인, 로그아웃 처리하기: HttpSession, Cookie 사용(계속)
+  - 066. 로그인 기능 활용하기: HttpSession 활용
+  - 067. 로그인이 필요한 요청인 경우 로그인으로 유도하기: Filter 활용
+
   
 ## 구글 미트
 https://meet.google.com/uou-bbtj-qzf

@@ -1,14 +1,11 @@
-### 061. JSP를 이용하여 출력문을 자동으로 생성하기: MVC 모델1
+### 067. 로그인이 필요한 요청인 경우 로그인으로 유도하기: Filter 활용
 
 ## 작업 내용
 
-### 1단계 - WelcomeServlet을 JSP 파일로 교체한다.
+### 1단계 - 로그인 검사 및 유도를 수행하는 필터를 만든다.
 
-- webapp/welcome.jsp 파일 생성
+- com.bitcamp.board.filter.LoginCheckFilter 클래스 생성
+  
+### 2단계 - 관리자 여부를 검사하는 필터를 만든다.
 
-### 2단계 - *Servlet을 JSP 파일로 교체한다.
-
-- com.bitcamp.board.servlet.*.Servlet 클래스를 JSP 파일로 전환
-- /webapp/WEB-INF/web.xml 변경
-- /webapp/board/*.jsp 파일 추가
-- /webapp/member/*.jsp 파일 추가
+- com.bitcamp.board.filter.AdminCheckFilter 클래스 생성
