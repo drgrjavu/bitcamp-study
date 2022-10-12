@@ -576,9 +576,29 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 - 서블릿 프로그래밍
   - 프론트 컨트롤러 디자인 패턴의 목적과 활용 방법
+  - 자바 코드로 서블릿을 배치하는 방법
 - board-app 프로젝트 수행 
-  - 076. 트랜잭션 관리자 역할을 별도의 클래스로 분리하기
+  - 076. 트랜잭션 관리자 역할을 별도의 클래스로 분리하기(계속)
+  - 077. Front Controller 디자인 패턴 도입하기
+  - 078. 페이지 컨트롤러를 POJO로 전환하기
 
+### 66일(10/11) 
+
+- 스프링 프레임워크
+  - Spring IoC 컨테이너 사용법
+  - Spring WebMVC 프레임워크 사용법
+- board-app 프로젝트 수행 
+  - 079. Spring IoC 컨테이너 도입하기: 페이지 컨트롤러 생성 자동화
+  - 080. Spring WebMVC 프론트 컨트롤러 도입하기
+
+### 67일(10/12) 
+
+- 스프링 프레임워크
+  - Spring IoC 컨테이너 사용법(계속)
+  - Spring WebMVC 프레임워크 사용법(계속)
+- board-app 프로젝트 수행 
+  - 081. CRUD를 수행하는 페이지 컨트롤러를 하나로 합치기
+  - 082. Spring WebMVC 프레임워크 사용법
 
 ## 구글 미트
 https://meet.google.com/uou-bbtj-qzf
