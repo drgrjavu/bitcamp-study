@@ -262,3 +262,32 @@
 ### 076. 트랜잭션 관리자 역할을 별도의 클래스로 분리하기
   - Spring 프레임워크의 트랜잭션 관리 기법을 모방해 보기
   - 왜 모방? 나중에 진짜 스프링 프레임워크를 사용할 때 이해도를 높히기 위해!
+### 077. Front Controller 디자인 패턴 도입하기
+  - Front Controller 디자인 패턴의 효과 및 적용 방법
+  - 자바 코드로 서블릿을 배치하는 방법
+### 078. 페이지 컨트롤러를 POJO로 전환하기
+  - 프론트 컨트롤러 구조에서 페이지 컨트롤러를 POJO로 전환하는 방법
+  - POJO? Plain Old Java Object (그냥 일반 자바 문법으로 만든 클래스)
+### 079. Spring IoC 컨테이너 도입하기: 페이지 컨트롤러 생성 자동화
+  - Spring IoC 컨테이너를 사용하여 객체를 자동으로 생성하는 방법
+### 080. Spring WebMVC 프론트 컨트롤러 도입하기
+  - Spring WebMVC 프레임워크에서 제공하는 DispatcherServlet 사용법
+### 081. CRUD를 수행하는 페이지 컨트롤러를 하나로 합치기
+  - 페이지 컨트롤러를 다루는 방법
+### 082. Spring WebMVC 프레임워크 사용법
+  - Spring WebMVC 프레임워크 사용법
+### 083. Spring WebMVC 프레임워크 사용법 II : 기타 설정
+  - Spring WebMVC 프레임워크의 다양한 설정법
+  - ServletContextInitializer 사용법
+### 084. Root IoC 컨테이너와 멀티 프론트 컨트롤러 사용법
+  - Root IoC 컨테이너를 설정하는 방법
+  - 여러 개의 프론트 컨트롤러를 설정하는 방법
+  - 프론트 컨트롤러 별로 필터를 설정하는 방법
+### 085. Mybatis SQL 매퍼 사용하기
+  - Mybastis SQL 매퍼를 사용하여 DAO를 구현하는 방법
+### 086. Mybatis SQL 매퍼 사용하기 II: DAO 구현 자동화
+  - Mybatis 의 설정을 이용하여 DAO 구현체를 자동으로 생성하는 방법
+### 087. 프로젝트에 서블릿 컨테이너(예:톰캣) 삽입하기
+  - 프로젝트에 톰캣을 삽입하여 구동하는 방법
+### 088. SpringBoot 적용하기
+  - SpringBoot 사용법
